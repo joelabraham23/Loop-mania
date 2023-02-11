@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="129.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/heart.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="defaultHealthBarSize" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="48.0" layoutY="2.0" stroke="#d85959" strokeType="INSIDE" style="-fx-arc-height: 10; -fx-arc-width: 10;" width="70.0" />
+      <Rectangle fx:id="characterHealthBox" arcHeight="5.0" arcWidth="5.0" fill="#f25e5e" height="20.0" layoutX="48.0" layoutY="2.0" stroke="#ce1111" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 10; -fx-arc-width: 10;" width="70.0" />
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="5.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/gold_pile.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="goldText" fill="#bf9939" layoutX="46.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Apple Symbols" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="6.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/xp.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="expText" fill="#95c9d8" layoutX="47.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Apple Symbols" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#454545" layoutX="43.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goals">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="85.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/turtleflag.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="20.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/turtleflag.gif" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="goalScroll" hbarPolicy="NEVER" layoutX="3.0" layoutY="200.0" pannable="true" prefHeight="55.0" prefWidth="120.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="55.0" prefWidth="120.0">
+               <children>
+                  <FlowPane alignment="CENTER" prefHeight="55.0" prefWidth="120.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Text fx:id="goalTextBox" fill="#343434" strokeType="OUTSIDE" strokeWidth="0.0" text="goals placeholder" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Book" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text fx:id="healthText" layoutX="54.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100 / 100">
+         <font>
+            <Font name="Apple Symbols" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ally1" fitHeight="32.0" fitWidth="32.0" layoutX="2.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../images/allied_soldier.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ally2" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../images/allied_soldier.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ally4" fitHeight="32.0" fitWidth="32.0" layoutX="95.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../images/allied_soldier.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ally3" fitHeight="32.0" fitWidth="32.0" layoutX="64.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../images/allied_soldier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="27.0" layoutX="8.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/cycle.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="cyclesText" fill="#9498d6" layoutX="47.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Apple Symbols" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="27.0" layoutX="9.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/doggeCoin.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="doggeCoinText" fill="#ffb23d" layoutX="48.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Apple Symbols" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="exchangeRate" fill="#2d2d2d" layoutX="8.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Avenir Book" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

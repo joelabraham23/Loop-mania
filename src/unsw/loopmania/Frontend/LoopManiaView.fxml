@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- TODO = modify and expand the GUI? -->
+<!-- anchorPaneRoot is the background of the main game -->
+
+<AnchorPane fx:id="anchorPaneRoot" onKeyPressed="#handleKeyPress" prefHeight="74.0" prefWidth="128.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <!-- HBox is used to stack items horizontally left to right -->
+   <HBox prefWidth="128.0">
+      <!-- VBox is used to stack items vertically top to bottom -->
+      <VBox>
+         <children>
+             <!-- squares contains the path, buildings, character, and enemies -->
+            <GridPane fx:id="squares" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+
+               </children>
+            </GridPane>
+
+            <!-- this BorderPane contains the ground under the cards and the cards -->
+            <BorderPane>
+               <bottom>
+                     <!-- cards GridPane holds the cards which can be used on the map -->
+                     <GridPane fx:id="cards" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+                        <columnConstraints>
+                           <ColumnConstraints />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints />
+                        </rowConstraints>
+                        <children>
+
+                        </children>
+                     </GridPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <!-- equippedItems contains the equipment equipped by the character in special slots -->
+            <!-- TODO = extend this to have slots for equipping armour, shields, helmets, and any other equippable items -->
+            <GridPane fx:id="equippedItems">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <!-- swordCell is the cell where a sword intended to be equipped will be dragged by the human player -->
+                  <ImageView id="swordCell" GridPane.columnIndex="0" GridPane.rowIndex="0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                     <image>
+                        <Image url="@../../../images/sword_unequipped.png" />
+                     </image>
+                  </ImageView>
+                  <!-- blankCell is an empty cell -->
+                  <ImageView id="blankCell" GridPane.columnIndex="1" GridPane.rowIndex="0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                     <image>
+                        <Image url="@../../../images/helmet_slot.png" />
+                     </image>
+                  </ImageView>
+                  <!-- shieldCell is the cell where a shield intended to be equipped will be dragged by the human player -->
+                  <ImageView id="shieldCell" GridPane.columnIndex="2" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                     <image>
+                        <Image url="@../../../images/shield_unequipped.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../../../images/armour_slot.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <!-- unequippedInventory is for unequipped items, which can be dragged into the equipped inventory -->
+            <GridPane fx:id="unequippedInventory" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  
+               </children>
+            </GridPane>
+            <!-- rareItems is for unequipped items, which can be dragged into the equipped inventory -->
+            <GridPane fx:id="rareItemInventory" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  
+               </children>
+            </GridPane>
+         
+                                                            <!-- clicking this button returns the human player to the main menu -->
+            <Button fx:id="mainMenuButton" focusTraversable="false" onAction="#switchToMainMenu" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #C4C3C3#C4C3C3; -fx-border-color: none; -fx-background-radius: 10;" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" top="3.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" />
+         </HBox.margin>
+      </VBox>
+   </HBox>
+</AnchorPane>

@@ -1,0 +1,14 @@
+.bodybg{
+    -fx-background-image: url('../../../images/menu_background.png');
+    -fx-background-size: 100% 100%;
+   }
+
+.shopbg{
+    -fx-background-image: url('../../../images/shopBackgroundWithHeading.png');
+    -fx-background-size: 100% 100%;
+}   
+
+.infoWidget{
+    -fx-background-image: url('../../../images/parchment.png');
+    -fx-background-size: 100% 100%;
+}

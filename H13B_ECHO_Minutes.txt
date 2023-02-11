@@ -1,0 +1,110 @@
+23/06/2021:
+	- Split up the Milestone 1 work into 4 distinct tasks:
+			1. User stories - Georgia + Joel
+			2. Frontend - Dheeraj
+			3. Uml class diagrams/assumptions - Yasmin
+	- Got started on UML Class Diagrams during meeting and discussed the specifications/requirements.
+
+24/06/2021:
+	- Discussed further about any questions we had with the tutor and our progress so far, during the lab session. We also set up a deadline of when to complete our respective parts being by Monday afternoon, which will leave us with enough time to go over it together before the Friday deadline. In the meantime, if any of us have any questions we can simply message in the Facebook Group chat.
+
+28/06/2021:
+	- Had a video meeting to discuss our work so far:
+		○ UML: Discussed the different strategies that we can implement i.e. observer, strategy and state and how we can implement/link them.
+		○ Frontend design: went through the draft prototype and suggestions to improve the design further e.g. for shopping screen, splitting inventory that we can buy between "buy" and "sell" screens. Also showing allies and inventory options.
+		○ User stories: went through the user-stories and again discussed the strategies for implementation. 
+	- Discussed git housekeeping: merge and pull requests for each branch (for specific user story).
+	- Split work for Milestone 2 as below:
+		Buildings (13)
+		- Yasamin
+		
+		Cards (13)
+		- Yasamin
+		
+		Shopping @ Hero's Castle (8)
+		- Georgia
+		
+		Goals (5)
+		- Georgia
+		
+		Automatic Movement/Random game features (3)
+		- Georgia
+		
+		Frontend (13)
+		- everyone contributes
+		- constant communication about it
+		- but also one file
+		- Georgia / Yas / everyone - depends on how soon backend features completed.
+		
+		Items (13)
+		- Dheeraj
+		
+		Weapons (13/8)
+		- Joel
+		
+		Gear (13/8)
+		- Dheeraj
+		
+		Enemies (13)
+		- Joel
+		
+		-----
+		Update UML - Georgia
+		Everyone write own tests
+		Everyone add to one assumptions file
+		
+30/06/2021:
+	- Update on progress on UML and Frontend design.
+		○ Suggested further changes to the frontend design: specifically, changes to background colour, adding in background image and logo, repositioning elements within shopping menu, etc.
+		○ For UML, discussed the relationships between Zombie and Allied soldiers and having a "Shape Shifting" interface instead to make things easier as allies can turn into zombies (with the critical bite), and enemies into allies (with the staff ability). 
+
+01/07/2021:
+	- Meeting during lab session to discuss progress and files needed to upload for milestone 1.
+		○ Frontend.pdf completed
+		○ Design.pdf completed
+	- Discussed assumptions that we would need to make for the overall design and classes and clarified them further with George.
+	- Discussed concrete values e.g. attack damage, defence values, buildings, etc, to add to the user stories.
+
+
+11/07/2021 
+	- Discussed work so far and the different stubs that have been implemented by Yasamin. 
+	- Dheeraj will finish testing for items by meeting planned on Tuesday. 
+	- Joel will work on the enemies implementation. 
+	- Georgia will continue work on the frontend. 
+	- Everyone will try to finish the assigned parts by Tuesday meeting so as to begin on the other classes implementation.
+	
+
+13/07/2021:
+	- Had an online meeting via Teams to discuss what has been completed so far (most of the unit and integration testing has been completed) and what work still needs to be completed (need to get a start on implementing the backend logic).
+	- Georgia will continue work on some frontend features and some backend logic.
+	- Yasamin, Joel and Dheeraj will work on the backend logic according to their respective assigned user stories.
+
+15/07/2021:
+	- Meeting during lab session and had an update on the assignment frontend and checking that the UI is working correctly.
+	- Went through the user stories and ticked off and appropriately sorted the status of the user stories.
+	- Update on everyone's status - Georgia continue working on frontend, Yasamin, Joel and Dheeraj continue working on the backend logic.
+
+22/07/2021:
+	- Went through lab demo for Milestone 2 with George
+	- Went through Milestone 3 updated requirements and agreed to distribute as below:
+		○ music - dheeraj (for extensions)
+		○ sound effects - joel (for extensions)
+		○ animation of sprites - yasamin (for extensions)
+		○ durability - dheeraj (to ensure OP rare items such as the Anduril to have a limited lifespan)
+		○ bosses - yasamin
+		○ doggiecoin - georgia 
+		○ endless testing - everyone takes charge for unit testing their own items, Georgia for compiling everything together in integration testing
+		○ Agile Project Management - joel (updating user stories and issue board with the new requirements)
+		○ elan doge -> comes out of building/rocket | doggie comes out of a mine new goal type -> yasamin 
+		○ rare items -> yasamin (new harmful rare item -> lose 50 health every cycle game modes)
+		○ Update UML - everyone (once user stories + backend has been implemented)
+		
+
+29/07/2021:
+	- Discussed the builder pattern and it's "potential" application in the assignment.
+	- Had a look at the added sound effects, gifs and boss card/buildings in the game.
+	- Updated on everyone's progress:
+		○ Dheeraj to finish durability by Friday morning
+		○ Georgia to work on sprites
+		○ Yasamin to attempt confusing mode
+		○ Joel to start writing tests for the two new bosses using gradle for coverage testing
